@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 
 // database connection
 // const dbURI = process.env.DB_URI;
-const dbURI = 'mongodb+srv://danihire:wYrXFV6SvgMcMeF@testingcluster.1iwpg.mongodb.net/node-auth?retryWrites=true&w=majority'
+const dbURI = 'mongodb+srv://dani:ruby@testingcluster.1iwpg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 const port = process.env.API_PORT
 
 mongoose.connect(dbURI)
