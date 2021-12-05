@@ -1,0 +1,28 @@
+nav {
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+.content {
+  width: 600px;
+  margin: 20px auto;
+}
+label {
+  display: block;
+}
+input {
+  display: block;
+  margin-bottom: 15px;
+}
+.footer {
+  margin-top: 50px;
+  text-align: center;
+}

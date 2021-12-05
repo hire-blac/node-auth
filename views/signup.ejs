@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+  <div class="content">
+
+    <form method="post">
+      <h2>Sign up</h2>
+      <label for="email">Email:</label>
+      <input type="text" name="email" />
+      <div class="email error"></div>
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" />
+      <div class="password error"></div>
+
+      <button type="submit">sign up</button>
+      <p>Already have an account? Login <a href="/login">here</a></p>
+      
+    </form>
+    
+  </div>
+<%- include('partials/footer') %> 

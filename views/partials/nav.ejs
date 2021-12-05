@@ -1,0 +1,20 @@
+<nav>
+  <h1>
+    <a href="/">smoothies</a>
+  </h1>
+  <ul>
+    <% if (user) { %>
+     <li>Welcome <%= user.email %> </li>
+     <li>
+       <a href="/logout">logout</a>
+     </li>
+    <% } else { %>
+      <li>
+        <a href="/login">login</a>
+      </li>
+      <li>
+        <a href="/signup">signup</a>
+      </li>
+    <% } %>
+  </ul>
+</nav>
