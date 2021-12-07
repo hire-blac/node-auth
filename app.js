@@ -13,12 +13,13 @@ app.set('view engine', 'ejs');
 
 // database connection
 // const dbURI = process.env.DB_URI;
-const dbURI = 'mongodb+srv://dani:ruby@testingcluster.1iwpg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
-const port = process.env.API_PORT
+const dbURI = process.env.DB_URI;
+const devPort = process.env.API_PORT;
+const port = process.env.PORT || devPort;
 
 mongoose.connect(dbURI)
 .then(() => {
-  console.log('Connected to Database at' + ' ' + dbURI);
+  console.log('Connected to Database');
   app.listen(port);
   console.log(`Server listening on port ${port}`)
 })
