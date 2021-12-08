@@ -4,6 +4,7 @@ const jwt = require('jsonwebtoken');
 
 // handle errors
 const handleErrors = (err) => {
+  console.log(err.message, err.code);
   let errors = { email: '', password: ''};
 
   // duplicate error code
@@ -50,10 +51,10 @@ module.exports.signup_post = async (req, res) => {
     res.redirect('/smoothies');
   } 
   catch (err) {
-    res.status(401).json({ err });
-    // const errors = handleErrors(err);
-    // console.log(err);
-    // res.status(401).json({ errors });
+    res.status(401).json({ errors });
+    const errors = handleErrors(err);
+    console.log(err);
+    res.status(401).json({ errors });
   }
 }
 
