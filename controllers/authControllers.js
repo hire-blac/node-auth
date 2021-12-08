@@ -51,9 +51,10 @@ module.exports.signup_post = async (req, res) => {
     res.redirect('/smoothies');
   } 
   catch (err) {
-    const errors = handleErrors(err);
-    console.log(err);
-    res.status(401).json({ errors });
+    res.status(401).json({ err });
+    // const errors = handleErrors(err);
+    // console.log(err);
+    // res.status(401).json({ errors });
   }
 }
 

@@ -12,7 +12,6 @@ const app = express();
 app.set('view engine', 'ejs');
 
 // database connection
-// const dbURI = process.env.DB_URI;
 const dbURI = process.env.DB_URI;
 const devPort = process.env.API_PORT;
 const port = process.env.PORT || devPort;
