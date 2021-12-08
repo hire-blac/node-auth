@@ -73,7 +73,7 @@ module.exports.login_post = async (req, res) => {
     res.redirect('/smoothies');
   }
   catch (err){
-    res.status(400).json({})
+    res.status(400).json({message: 'invalid login credentials'})
   }
 }
 
